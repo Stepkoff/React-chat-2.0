@@ -30,14 +30,14 @@ export const appRouter = createBrowserRouter([
           <SignInPage/>
         </PublicRoute>
       },
-      {
-        path: '*',
-        element: <Navigate to={'/not-found-404'}/>
-      },
-      {
-        path: '/not-found-404',
-        element: <ErrorPage/>
-      },
     ]
+  },
+  {
+    path: '*',
+    element: <Navigate to={'/not-found-404'}/>
+  },
+  {
+    path: '/not-found-404',
+    element: <ErrorPage/>
   },
 ]);
