@@ -18,19 +18,20 @@ export const appRouter = createBrowserRouter([
           <ChatPage/>
         </PrivateRoute>
       },
-      {
-        path: '/signUp',
-        element: <PublicRoute>
-          <SignUpPage/>
-        </PublicRoute>
-      },
-      {
-        path: '/signIn',
-        element: <PublicRoute>
-          <SignInPage/>
-        </PublicRoute>
-      },
+
     ]
+  },
+  {
+    path: '/signUp',
+    element: <PublicRoute>
+      <SignUpPage/>
+    </PublicRoute>
+  },
+  {
+    path: '/signIn',
+    element: <PublicRoute>
+      <SignInPage/>
+    </PublicRoute>
   },
   {
     path: '*',
