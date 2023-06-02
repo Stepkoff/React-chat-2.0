@@ -58,7 +58,7 @@ export const ToggleTheme = () => {
     setTheme('system')
   }
   return (
-    <div className={'hidden sm:flex sm:fixed bottom-2 right-4 cursor-pointer'}>
+    <div className={'flex fixed bottom-8 right-6 cursor-pointer'}>
       <Menubar>
         <MenubarMenu>
           <MenubarTrigger>
