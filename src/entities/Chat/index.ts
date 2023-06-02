@@ -1,0 +1,6 @@
+export {chatSlice, setChatWithUser, removeChatWithUser, setUserChats, removeUserChats} from './model/chatSlice.ts'
+export {ChatContainer} from './ui/ChatContainer.tsx'
+export {ChatList} from './ui/ChatsList.tsx'
+export {ChatInput} from './components/ChatInput.tsx'
+export {UserMessage} from './components/UserMessage.tsx'
+export {Messages} from './components/Messages.tsx'

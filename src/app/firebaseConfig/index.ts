@@ -1,0 +1,1 @@
+export {fireDb, fireAuth, fireStorage} from './firebaseConfig.ts';
