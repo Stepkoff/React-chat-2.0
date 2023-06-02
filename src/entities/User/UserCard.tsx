@@ -28,7 +28,10 @@ export const UserCard = ({chat, chatId}:UserCardType) => {
       </Avatar>
       <div className={'h-full flex flex-col w-full justify-between'}>
         <div className={'flex justify-between max-w-[189px] '}>
-          <span className={'text-sm  whitespace-nowrap overflow-hidden overflow-ellipsis'}>{`${chat.userInfo.firstName} ${chat.userInfo.lastName}`}</span>
+          <span className={'text-sm  whitespace-nowrap overflow-hidden overflow-ellipsis'}>
+            <span className={'inline-block first-letter:uppercase'}>{chat.userInfo.firstName}</span>&nbsp;
+            <span className={'inline-block first-letter:uppercase'}>{chat.userInfo.lastName}</span>
+          </span>
           <span className={'text-[12px] text-gray-500 whitespace-nowrap'}>{time}</span>
         </div>
         {
