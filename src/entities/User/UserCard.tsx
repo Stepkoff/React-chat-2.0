@@ -36,7 +36,7 @@ export const UserCard = ({chat, chatId}:UserCardType) => {
         </div>
         {
           chat.lastMessage?.message && <div className={'text-sm text-gray-500 whitespace-nowrap overflow-hidden overflow-ellipsis max-w-[189px] '}>
-            {chat.lastMessage?.message}
+            {chat.lastMessage?.message} 
             </div>
         }
       </div>

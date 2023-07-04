@@ -17,7 +17,7 @@ export const UserMessage = ({message, user, currentUser}:UserMessageProps) => {
         <img className={'h-12 w-12 object-cover rounded-full'} src={currentUser?.uid === message.senderId ? currentUser.photoUrl : user?.photoUrl} alt=""/>
       </div>
       <div className={cn('bg-accent flex flex-col gap-2 p-2', owner ? 'rounded-b rounded-tl' : 'rounded-b rounded-tr')}>
-        {message.message && <div className={'max-w-2xl'}>{message.message}</div>}
+        {message.message && <div className={'max-w-2xl text-base'}>{message.message}</div>}
         {message.img && <div className={cn('flex', owner ? 'justify-end' : 'justify-start')}>
             <Dialog>
                 <DialogTrigger><img className={'h-16 w-16 object-cover'} src={message.img} alt=""/></DialogTrigger>
